@@ -1,9 +1,4 @@
-/**
-* Template Name: Regna - v2.1.0
-* Template URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 !(function($) {
   "use strict";
 
@@ -25,7 +20,7 @@
     return false;
   });
 
-  // Initiate superfish on nav menu
+
   $('.nav-menu').superfish({
     animation: {
       opacity: 'show'
@@ -137,7 +132,7 @@
     });
   });
 
-  // Porfolio isotope and filter
+  
   $(window).on('load', function() {
     var portfolioIsotope = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item',
