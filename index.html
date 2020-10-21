@@ -9,9 +9,10 @@
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
-  
+
   <link href="assets/img/logosolo.png" rel="icon">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -21,14 +22,42 @@
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/whatsapp.css">
+  <link rel="stylesheet" href="assets/css/whats.css">
+  <link rel="stylesheet" href="assets/css/whats2.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <a href="https://api.whatsapp.com/send?phone=5493471688801&text=&source=&data=&app_absent=" class="float" target="_blank">
-  <i class="fa fa-whatsapp my-float"></i>
-  </a>
+  <div class="nav-bottom">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <div class="popup-whatsapp fadeIn">
+      <div class="content-whatsapp -top"><button type="button" class="closePopup">
+          <i class="material-icons icon-font-color">close</i>
+        </button>
+
+        <p> <img src="assets/img/secretary.png" width="50"> Hola, ¿En qué podemos ayudarte? </p>
+
+      </div>
+      <div class="content-whatsapp -bottom">
+        <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
+
+
+
+
+        <button class="send-msPopup" id="send-btn" type="button">
+          <i class="material-icons icon-font-color--black">send</i>
+        </button>
+
+      </div>
+    </div>
+    <button type="button" id="whats-openPopup" class="whatsapp-button">
+      <div class="float">
+        <i class="fa fa-whatsapp my-float"></i></div>
+    </button>
+    <div class="circle-anime"></div>
+  </div>
+  <script src="assets/js/script2.js"></script>
+
   <!-- ======= Header ======= -->
   <header id="header" class="header-transparent">
     <div class="container">
@@ -66,7 +95,12 @@
           <div class="col-lg-6 content order-lg-1 order-2">
             <h2 class="title">Nosotros</h2>
             <p align="justify">
-              Somos una pareja, Nacho y Eve, del interior de Santa Fe. Desde hace 10 años nos dedicamos a esto, arrancamos en un garage con 7 metros de material un plotter de corte y una estampadora, nunca nos detuvimos. Hicimos cambios miles, marcas, proveedores, maquinas, locales pero siempre tuvimos una sola cosa en mente, lo mejor para el cliente!.. Errores? pf! miles, nos paso de todo, nos dimos y nos seguimos dando la cabeza conta la pared pero tratamos de solucionar los inconvenientes siempre de la mejor manera. Hoy nos ayuda Silvi que ya es parte de este equipo y tiene la camiseta puesta como nosotros!.
+              Somos una pareja, Nacho y Eve, del interior de Santa Fe. Desde hace 10 años nos dedicamos a esto,
+              arrancamos en un garage con 7 metros de material un plotter de corte y una estampadora, nunca nos
+              detuvimos. Hicimos cambios miles, marcas, proveedores, maquinas, locales pero siempre tuvimos una sola
+              cosa en mente, lo mejor para el cliente!.. Errores? pf! miles, nos paso de todo, nos dimos y nos seguimos
+              dando la cabeza conta la pared pero tratamos de solucionar los inconvenientes siempre de la mejor manera.
+              Hoy nos ayuda Silvi que ya es parte de este equipo y tiene la camiseta puesta como nosotros!.
             </p>
 
           </div>
@@ -123,21 +157,24 @@
             <div class="box">
               <div class="icon"><i class="fa fa-photo"></i></div>
               <h4 class="title">Vinilo Decorativo</h4>
-              <p class="description">Es un elemento de decoracion de tamaño varialble que facilita el recubrimiento de diversas superficies lisas. Embellece espacios</p>
+              <p class="description">Es un elemento de decoracion de tamaño varialble que facilita el recubrimiento de
+                diversas superficies lisas. Embellece espacios</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
             <div class="box">
               <div class="icon"><i class="fa fa-car"></i></div>
               <h4 class="title">Gráfica Vehicular</h4>
-              <p class="description">Los diferentes vehiculos puede plotearse parcial o totalmente con imagen impresa en alta definición. Herramienta promocional de rápida implementacion y muy efectiva.</p>
+              <p class="description">Los diferentes vehiculos puede plotearse parcial o totalmente con imagen impresa en
+                alta definición. Herramienta promocional de rápida implementacion y muy efectiva.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
             <div class="box">
               <div class="icon"><i class="fa fa-road"></i></div>
               <h4 class="title">Carteles Ruteros</h4>
-              <p class="description">Publicidad las 24hs a bajo costo, podes posicionar tu marca o producto de manera efectiva en una zona estratégica y con una exposicion permanente.</p>
+              <p class="description">Publicidad las 24hs a bajo costo, podes posicionar tu marca o producto de manera
+                efectiva en una zona estratégica y con una exposicion permanente.</p>
             </div>
           </div>
 
@@ -145,40 +182,45 @@
             <div class="box">
               <div class="icon"><i class="fa fa-bold"></i></div>
               <h4 class="title">Corporeos</h4>
-              <p class="description">Una forma útil de incorporar la tridimension en la publicidad estática. Realizamos isologo y textos de gran impacto visual, en diversos materiales.</p>
+              <p class="description">Una forma útil de incorporar la tridimension en la publicidad estática. Realizamos
+                isologo y textos de gran impacto visual, en diversos materiales.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
             <div class="box">
               <div class="icon"><i class="fa fa-rocket"></i></div>
               <h4 class="title">Ploteo de Objetos</h4>
-              <p class="description">Recubrir o forrar un objeto con vinilo, tapando toda la superficie con un color liso o un vinilo impreso.</p>
+              <p class="description">Recubrir o forrar un objeto con vinilo, tapando toda la superficie con un color
+                liso o un vinilo impreso.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
             <div class="box">
               <div class="icon"><i class="fa fa-map"></i></div>
               <h4 class="title">Papel Mural</h4>
-              <p class="description">Es un material de papel que tiene un adhesivo hidrosoluble inactico en su parte trasera, se instala con agua para activar su pegamento.</p>
+              <p class="description">Es un material de papel que tiene un adhesivo hidrosoluble inactico en su parte
+                trasera, se instala con agua para activar su pegamento.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
             <div class="box">
               <div class="icon"><i class="fa fa-cube"></i></div>
               <h4 class="title">Rotular</h4>
-              <p class="description">Acción de pegar gráfica recortada sobre un objeto donde parte de la superficie queda expuesta, por ejemplo colocarle letras o numeros a un vehículo.</p>
+              <p class="description">Acción de pegar gráfica recortada sobre un objeto donde parte de la superficie
+                queda expuesta, por ejemplo colocarle letras o numeros a un vehículo.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
             <div class="box">
               <div class="icon"><i class="fa fa-table"></i></div>
               <h4 class="title">Microperforado</h4>
-              <p class="description">Son láminas de PVC agujereadas de forma uniforme, que dejan pasar la luz. Se colocan habitualmente en ventanas, permiten ver el exterior.</p>
+              <p class="description">Son láminas de PVC agujereadas de forma uniforme, que dejan pasar la luz. Se
+                colocan habitualmente en ventanas, permiten ver el exterior.</p>
             </div>
           </div>
-          
 
-      </div>
+
+        </div>
     </section>
 
     <!-- ======= Call To Action Section ======= -->
@@ -187,11 +229,15 @@
         <div class="row" data-aos="zoom-in">
           <div class="col-lg-9 text-center text-lg-left">
             <h3 class="cta-title">Reconocimiento Roland</h3>
-            <p class="cta-text"> 
-            Somos la primer empresa en América en recibir el premio de "caso de éxito Roland" otorgado por la prestigiosa firma japonesa, que fábrica los plotters de mayor calidad del mercado.¡Gracias Roland DGA América Latina por este reconocimiento! ¡Felices de usar sus productos!</p>
+            <p class="cta-text">
+              Somos la primer empresa en América en recibir el premio de "caso de éxito Roland" otorgado por la
+              prestigiosa firma japonesa, que fábrica los plotters de mayor calidad del mercado.¡Gracias Roland DGA
+              América Latina por este reconocimiento! ¡Felices de usar sus productos!</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" target="_blank" href="https://www.rolanddga.com/es/galeria/profesionales/creacion-de-letreros/vision-grafica?fbclid=IwAR0v-hSV0ekZt5s5BuArcYb-ieARB8v1pbA5QDKx010MnNAdv2JLuSJQy_4">Conoce más</a>
+            <a class="cta-btn align-middle" target="_blank"
+              href="https://www.rolanddga.com/es/galeria/profesionales/creacion-de-letreros/vision-grafica?fbclid=IwAR0v-hSV0ekZt5s5BuArcYb-ieARB8v1pbA5QDKx010MnNAdv2JLuSJQy_4">Conoce
+              más</a>
           </div>
         </div>
 
@@ -223,12 +269,13 @@
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app" >
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <img src="assets/img/portfolio/decorativo-1.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Vinilo decorativo</h4>
               <p>Mandala colorido</p>
-              <a href="assets/img/portfolio/decorativo-1.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Vinilo decorativo 1"><i class="bx bx-plus"></i></a>              
+              <a href="assets/img/portfolio/decorativo-1.jpg" data-gall="portfolioGallery" class="venobox preview-link"
+                title="Vinilo decorativo 1"><i class="bx bx-plus"></i></a>
             </div>
           </div>
 
@@ -237,7 +284,8 @@
             <div class="portfolio-info">
               <h4>Vinilo decorativo</h4>
               <p>Flores</p>
-              <a href="assets/img/portfolio/decorativo-2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Vinilo decorativo 2"><i class="bx bx-plus"></i></a>
+              <a href="assets/img/portfolio/decorativo-2.jpg" data-gall="portfolioGallery" class="venobox preview-link"
+                title="Vinilo decorativo 2"><i class="bx bx-plus"></i></a>
             </div>
           </div>
 
@@ -246,7 +294,8 @@
             <div class="portfolio-info">
               <h4>Vehículo</h4>
               <p>Borbotti</p>
-              <a href="assets/img/portfolio/auto-1.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="vehiculo 1"><i class="bx bx-plus"></i></a>
+              <a href="assets/img/portfolio/auto-1.jpg" data-gall="portfolioGallery" class="venobox preview-link"
+                title="vehiculo 1"><i class="bx bx-plus"></i></a>
             </div>
           </div>
 
@@ -255,7 +304,8 @@
             <div class="portfolio-info">
               <h4>Vehículo</h4>
               <p>Garcia&Olivero</p>
-              <a href="assets/img/portfolio/auto-2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Vehículo 2"><i class="bx bx-plus"></i></a>
+              <a href="assets/img/portfolio/auto-2.jpg" data-gall="portfolioGallery" class="venobox preview-link"
+                title="Vehículo 2"><i class="bx bx-plus"></i></a>
             </div>
           </div>
 
@@ -264,7 +314,8 @@
             <div class="portfolio-info">
               <h4>Vehículo</h4>
               <p>Ambulancia susamco</p>
-              <a href="assets/img/portfolio/auto-3.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Vehículo 3"><i class="bx bx-plus"></i></a>
+              <a href="assets/img/portfolio/auto-3.jpg" data-gall="portfolioGallery" class="venobox preview-link"
+                title="Vehículo 3"><i class="bx bx-plus"></i></a>
             </div>
           </div>
 
@@ -273,7 +324,8 @@
             <div class="portfolio-info">
               <h4>Vehículo</h4>
               <p>El Torito</p>
-              <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Vehículo 4"><i class="bx bx-plus"></i></a>
+              <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox preview-link"
+                title="Vehículo 4"><i class="bx bx-plus"></i></a>
             </div>
           </div>
 
@@ -282,7 +334,8 @@
             <div class="portfolio-info">
               <h4>Corporeo</h4>
               <p>Planisferio decorativo</p>
-              <a href="assets/img/portfolio/corporeo-1.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Corporeo 1"><i class="bx bx-plus"></i></a>
+              <a href="assets/img/portfolio/corporeo-1.jpg" data-gall="portfolioGallery" class="venobox preview-link"
+                title="Corporeo 1"><i class="bx bx-plus"></i></a>
             </div>
           </div>
 
@@ -291,7 +344,8 @@
             <div class="portfolio-info">
               <h4>Corporeo</h4>
               <p>Escuela taller municipal</p>
-              <a href="assets/img/portfolio/corporeo-2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Corporeo 2"><i class="bx bx-plus"></i></a>
+              <a href="assets/img/portfolio/corporeo-2.jpg" data-gall="portfolioGallery" class="venobox preview-link"
+                title="Corporeo 2"><i class="bx bx-plus"></i></a>
             </div>
           </div>
 
@@ -300,15 +354,17 @@
             <div class="portfolio-info">
               <h4>Corporeo</h4>
               <p>CCIR Armstrong</p>
-              <a href="assets/img/portfolio/corporeo-3.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Corporeo 3"><i class="bx bx-plus"></i></a>
+              <a href="assets/img/portfolio/corporeo-3.jpg" data-gall="portfolioGallery" class="venobox preview-link"
+                title="Corporeo 3"><i class="bx bx-plus"></i></a>
             </div>
           </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-mural">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-mural">
             <img src="assets/img/portfolio/mural-1.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Mural</h4>
               <p>Puente de Brooklyn</p>
-              <a href="assets/img/portfolio/mural-1.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Mural 1"><i class="bx bx-plus"></i></a>
+              <a href="assets/img/portfolio/mural-1.jpg" data-gall="portfolioGallery" class="venobox preview-link"
+                title="Mural 1"><i class="bx bx-plus"></i></a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 portfolio-item filter-mural">
@@ -316,7 +372,8 @@
             <div class="portfolio-info">
               <h4>Mural</h4>
               <p>Imagen en vinilo mateb</p>
-              <a href="assets/img/portfolio/mural-2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Mural 2"><i class="bx bx-plus"></i></a>
+              <a href="assets/img/portfolio/mural-2.jpg" data-gall="portfolioGallery" class="venobox preview-link"
+                title="Mural 2"><i class="bx bx-plus"></i></a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 portfolio-item filter-mural">
@@ -324,7 +381,8 @@
             <div class="portfolio-info">
               <h4>Mural</h4>
               <p>Imagen en vinilo mate</p>
-              <a href="assets/img/portfolio/mural-3.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Mural 3"><i class="bx bx-plus"></i></a>
+              <a href="assets/img/portfolio/mural-3.jpg" data-gall="portfolioGallery" class="venobox preview-link"
+                title="Mural 3"><i class="bx bx-plus"></i></a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
@@ -332,7 +390,8 @@
             <div class="portfolio-info">
               <h4>Web 3</h4>
               <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox preview-link"
+                title="Web 3"><i class="bx bx-plus"></i></a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
@@ -340,7 +399,8 @@
             <div class="portfolio-info">
               <h4>Web 3</h4>
               <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox preview-link"
+                title="Web 3"><i class="bx bx-plus"></i></a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
@@ -348,7 +408,8 @@
             <div class="portfolio-info">
               <h4>Web 3</h4>
               <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox preview-link"
+                title="Web 3"><i class="bx bx-plus"></i></a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
@@ -356,7 +417,8 @@
             <div class="portfolio-info">
               <h4>Web 3</h4>
               <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox preview-link"
+                title="Web 3"><i class="bx bx-plus"></i></a>
             </div>
           </div>
         </div>
@@ -391,13 +453,13 @@
               <div class="social">
                 <a target="_blank" href="https://www.instagram.com/evetramannoni/"><i class="fa fa-instagram"></i></a>
                 <a target="_blank" href="https://www.facebook.com/eve.tramannoni"><i class="fa fa-facebook"></i></a>
-              
+
               </div>
             </div>
           </div>
-          
 
-      </div>
+
+        </div>
     </section>
 
     <!-- ======= Contact Section ======= -->
@@ -408,7 +470,9 @@
         </div>
       </div>
 
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.485134658585!2d-61.61100808497049!3d-32.779393580971316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c9e962bbebe3d1%3A0x5be4b706c6822cf2!2sVision%20Grafica!5e0!3m2!1ses-419!2sar!4v1596641930703!5m2!1ses-419!2sar" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.485134658585!2d-61.61100808497049!3d-32.779393580971316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c9e962bbebe3d1%3A0x5be4b706c6822cf2!2sVision%20Grafica!5e0!3m2!1ses-419!2sar!4v1596641930703!5m2!1ses-419!2sar"
+        width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
 
       <div class="container mt-5">
         <div class="row justify-content-center">
@@ -433,15 +497,19 @@
             </div>
 
             <div class="social-links">
-              <a target="_blank" href="https://www.facebook.com/visiongraficaok/" class="facebook"><i class="fa fa-facebook"></i></a>
-              <a target="_blank" href="https://www.instagram.com/visiongraficaok/" class="instagram"><i class="fa fa-instagram"></i></a>
-              <a target="_blank" href="https://api.whatsapp.com/send?phone=5493471688801&text=&source=&data=&app_absent=" class="whatsapp"><i class="fa fa-whatsapp"></i></a>
+              <a target="_blank" href="https://www.facebook.com/visiongraficaok/" class="facebook"><i
+                  class="fa fa-facebook"></i></a>
+              <a target="_blank" href="https://www.instagram.com/visiongraficaok/" class="instagram"><i
+                  class="fa fa-instagram"></i></a>
+              <a target="_blank"
+                href="https://api.whatsapp.com/send?phone=5493471688801&text=&source=&data=&app_absent="
+                class="whatsapp"><i class="fa fa-whatsapp"></i></a>
             </div>
 
           </div>
 
-          
-      </div>
+
+        </div>
     </section>
 
   </main><!-- End #main -->
@@ -457,7 +525,7 @@
       <div class="copyright">
         Designed by<strong> <a target="_blank" href="https://wa.me/542233009927">caropoeta</a> </strong>
       </div>
-      
+
     </div>
   </footer>
 
